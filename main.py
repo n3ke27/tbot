@@ -6,7 +6,7 @@ bot = telebot.TeleBot('5569374220:AAEoyEM5zkZBNa7QjB-rIiP-Hfs5lideIWo')
 @bot.message_handler( commands=['start'] )
 def greetings(message):
     user = message.from_user.username
-    bot.reply_to(message, "Hey! " + str(user))
+    bot.reply_to(message, "Hi! " + str(user))
 
 
 @bot.message_handler( content_types=['text'] )
